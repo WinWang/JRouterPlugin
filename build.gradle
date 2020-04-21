@@ -5,9 +5,9 @@ buildscript {
     repositories {
         google()
         jcenter()
-        maven {//本地Maven仓库地址
-            url uri('/Users/zxw/Desktop/plugin')
-        }
+//        maven {//本地Maven仓库地址
+//            url uri('/Users/zxw/Desktop/plugin')
+//        }
         maven {
             url "https://jitpack.io"
         }
@@ -26,9 +26,9 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven {//本地Maven仓库地址
-            url uri('/Users/zxw/Desktop/plugin')
-        }
+//        maven {//本地Maven仓库地址
+//            url uri('/Users/zxw/Desktop/plugin')
+//        }
         maven {
             url "https://jitpack.io"
         }
