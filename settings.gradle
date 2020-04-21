@@ -1,0 +1,4 @@
+rootProject.name='JRouterPlugin'
+include ':app'
+include ':Plugin'
+include ':LoginLib'

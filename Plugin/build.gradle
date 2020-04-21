@@ -1,0 +1,35 @@
+apply plugin: 'java-library'
+apply plugin: 'maven'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.piaoguodeyu'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation "com.android.tools.build:gradle:3.2.1"
+}
+repositories {
+    mavenCentral()
+}
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+group = 'com.hjds.router'
+version = '1.0.0'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            //提交到远程服务器：
+            // repository(url: "http://www.xxx.com/repos") {
+            //    authentication(userName: "admin", password: "admin")
+            // }
+            //本地的Maven地址设置为D:/repos
+            repository(url: uri('/Users/zxw/Desktop/plugin'))
+        }
+    }
+}
+
+
