@@ -37,10 +37,10 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                from components.release
+//                from components.release
                 groupId = 'com.github.WinWang'
                 artifactId = 'JRouter'
-                version = '1.0.7'
+                version = '1.0.8'
             }
         }
     }
