@@ -9,7 +9,7 @@ buildscript {
 //            url uri('/Users/zxw/Desktop/plugin')
 //        }
         maven {
-            url "https://jitpack.io"
+            url "https://www.jitpack.io"
         }
     }
     dependencies {
@@ -30,7 +30,7 @@ allprojects {
 //            url uri('/Users/zxw/Desktop/plugin')
 //        }
         maven {
-            url "https://jitpack.io"
+            url "https://www.jitpack.io"
         }
     }
 }

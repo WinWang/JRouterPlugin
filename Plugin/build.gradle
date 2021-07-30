@@ -1,6 +1,7 @@
 apply plugin: 'java-library'
+apply plugin: 'maven-publish'
 //apply plugin: 'maven'
-apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.WinWang'
 
 dependencies {
@@ -31,5 +32,20 @@ targetCompatibility = "1.8"
 //        }
 //    }
 //}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+//                from components.release
+                groupId = 'com.github.WinWang'
+                artifactId = 'JRouterPlugin'
+                version = '1.0.6'
+            }
+        }
+    }
+}
+
+
 
 
